@@ -2,9 +2,10 @@
   "name": "testpurejs",
   "version": "0.1.0",
   "description": "A library to help write tests for pure functions in mocha",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register"
+    "test": "mocha --compilers js:babel-register",
+    "compile": "babel -d lib src"
   },
   "repository": {
     "type": "git",

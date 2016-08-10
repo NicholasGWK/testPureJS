@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/NicholasGWK/testPureJS/issues"
   },
-  "homepage": "https://github.com/NicholasGWK/testPureJS#readme"
+  "homepage": "https://github.com/NicholasGWK/testPureJS#readme",
+  "devDependencies": {
+    "eslint": "^3.2.2"
+  }
 }

@@ -1,24 +1,24 @@
 export const test = (name, fn, input, expected, assertion) => {
-    const output = fn(input);
-    return () => {
-      it(name, () => {
-        assertion(expected, output);
-      });
-  }
-}
+  const output = fn(input);
+  return () => {
+    it(name, () => {
+      assertion(expected, output);
+    });
+  };
+};
 
 export const suite = (name, tests) => {
-    return () => {
-      describe(name, () => {
-        runTests(tests);
+  return () => {
+    describe(name, () => {
+      runTests(tests);
     });
   };
 };
 
 export const runTests = tests => {
-    if(Array.isArray(tests)) {
-    tests.forEach(test => {
-      test();
+  if (Array.isArray(tests)) {
+    tests.forEach(currTest => {
+      currTest();
     });
   } else {
     tests();

@@ -1,2 +1,2 @@
-var testPureJs = require('lib/index.js');
+const testPureJS = require('lib/index.js');
 module.exports = testPureJS;

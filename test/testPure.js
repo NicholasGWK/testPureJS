@@ -1,4 +1,4 @@
-import { test, testSuite, runTests } from '../src/test'
+import { test, suite, runTests } from '../src/test'
 import { equal, notEqual } from '../src/assertions.js';
 
 
@@ -9,4 +9,4 @@ const tests = [
     test('Not Equal should work', pureFn, 12, 13, notEqual),
 ];
 
-runTests(testSuite('All my tests', tests));
+runTests(suite('All my tests', tests));
